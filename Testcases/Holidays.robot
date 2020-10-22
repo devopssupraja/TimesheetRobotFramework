@@ -12,19 +12,19 @@ Test setup    Set Screenshot Directory    ${Path}
 *** Variables ***
 ${url}           https://hourglass.thinksoftglobal.com:8001/  
 ${browser}       chrome      
-@{Holidays}         12-Oct-2020
+@{Holidays}         21-Oct-2020
 ${test name}    LoginTest Holidays   
-${Path}    C:/Users/RDMD/Desktop/RobotFramework-Screenshots/${test name}
+${Path}    C:/Users/RDMD/Desktop/RobotFrameworkScreenshots/${test name}
 
 
 *** Test Cases ***
-LoginTest Holidays               TG1791      Ln$$Sep2020
+LoginTest Holidays               TG1791      Ln$$Oct2020
                         
 *** Keywords ***
 LoginTest Holidays
     [Arguments]       ${username}    ${password}
    
-    Create Directory    C:/Users/RDMD/Desktop/RobotFramework-Screenshots/${test name}
+    Create Directory    C:/Users/RDMD/Desktop/RobotFrameworkScreenshots/${test name}
     Open Browser       ${url}    ${browser}
     
     Maximize Browser Window
