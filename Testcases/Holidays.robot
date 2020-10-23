@@ -10,16 +10,16 @@ Test setup    Set Screenshot Directory    ${Path}
 
 
 *** Variables ***
-${url}           https://hourglass.thinksoftglobal.com:8001/  
+${url}           https://hourglass.esl-bfsi.com:8001/  
 ${browser}       chrome      
-@{Holidays}         21-Oct-2020
+@{Holidays}         19-Oct-2020      20-Oct-2020
 ${test name}    LoginTest Holidays   
-${Path}    C:/Users/RDMD/Desktop/RobotFrameworkScreenshots/${test name}
+${Path}          C:/Users/RDMD/Desktop/RobotFrameworkScreenshots/${test name}
 
 
 *** Test Cases ***
 LoginTest Holidays               TG1791      Ln$$Oct2020
-                        
+                                 7412        Suprithi2716
 *** Keywords ***
 LoginTest Holidays
     [Arguments]       ${username}    ${password}
@@ -28,9 +28,9 @@ LoginTest Holidays
     Open Browser       ${url}    ${browser}
     
     Maximize Browser Window
-    Click Button    id=details-button  
-    Sleep    2    
-    Click Link        id=proceed-link    
+    #Click Button    id=details-button  
+    #Sleep    2    
+    #Click Link        id=proceed-link    
     Input Text        id=id_username    ${username}
     Input Password    id=id_password    ${password}
     Click Image    /static/css/images/btn_go.png
