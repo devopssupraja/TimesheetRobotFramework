@@ -11,7 +11,7 @@ Test setup    Set Screenshot Directory    ${Path}
 *** Variables ***
 ${url}                https://hourglass.esl-bfsi.com:8001/  
 ${browser}            chrome 
-@{workingdays}        21-Oct-2020        22-Oct-2020         23-Oct-2020
+@{workingdays}        21-Oct-2020        22-Oct-2020         27-Oct-2020
 ${test name}         LoginTest 3417WorkingDaysProjectTask   
 ${Path}             C:/Users/RDMD/Desktop/RobotFrameworkScreenshots/${test name}
 
@@ -60,7 +60,9 @@ LoginTest WorkingDays
         
         Click Button      effort_time${DailyDate}1
         Sleep    1    
+        
         Double Click element    //*[@id="ui-timepicker-div"]/table/tbody/tr/td[1]/table/tbody/tr[2]/td[3]/a
+        
         Sleep    1    
         
         Click Button   Save
