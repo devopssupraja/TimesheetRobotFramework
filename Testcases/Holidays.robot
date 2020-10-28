@@ -18,8 +18,8 @@ ${Path}          C:/Users/RDMD/Desktop/RobotFrameworkScreenshots/${test name}
 
 
 *** Test Cases ***
-LoginTest Holidays               TG1791      Ln$$Oct2020
-                                 7412        Suprithi2716
+LoginTest Holidays               lakshminarayanan.radhakrishnan@sqs.com       Ln$$Oct2020
+                                 supraja.ramanujam@sqs.com                    Suprithi2716
 *** Keywords ***
 LoginTest Holidays
     [Arguments]       ${username}    ${password}

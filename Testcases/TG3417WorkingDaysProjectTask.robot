@@ -11,12 +11,12 @@ Test setup    Set Screenshot Directory    ${Path}
 *** Variables ***
 ${url}                https://hourglass.esl-bfsi.com:8001/  
 ${browser}            chrome 
-@{workingdays}        21-Oct-2020        22-Oct-2020         27-Oct-2020
+@{workingdays}        21-Oct-2020        22-Oct-2020         23-Oct-2020
 ${test name}         LoginTest 3417WorkingDaysProjectTask   
 ${Path}             C:/Users/RDMD/Desktop/RobotFrameworkScreenshots/${test name}
 
 *** Test Cases ***
-LoginTest WorkingDays               7412         Suprithi2716
+LoginTest WorkingDays               supraja.ramanujam@sqs.com         Suprithi2716
 
                                     
                         
